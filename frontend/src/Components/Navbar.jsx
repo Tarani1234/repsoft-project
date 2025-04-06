@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const handleLogout = async() =>{
      try{
-      const res = await axios.post("http://localhost:5000/api/auth/logout");
+      const res = await axios.post("https://repsoft-project.onrender.com/api/auth/logout");
 
       console.log("Logout successful:", res.data);
       navigate("/login");
