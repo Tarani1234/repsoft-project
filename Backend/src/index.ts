@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./config/db";
 import authRoutes from './authRoutes/routes'
+import serverless from 'serverless-http'
 
 
 
@@ -22,6 +23,11 @@ app.get("/", (req, res) => {
   res.send("API is running");
 });
 
+
 app.listen(PORT, () => {
   console.log(` Server running on http://localhost:${PORT}`);
 });
+
+
+
+
