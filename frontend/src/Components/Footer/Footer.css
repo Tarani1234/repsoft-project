@@ -1,0 +1,151 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 20px 8%;
+    margin: 0 auto;
+    width: 100%;
+   margin-top: 30px;
+}
+
+.footer-content {
+    font-size: 16px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li {
+    display: inline;
+}
+
+.footer-nav ul li a {
+    color: rgba(250, 36, 90, 1); 
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+
+.footer-content p{
+   max-width: 550px;
+}
+.footer-para{
+    margin-top: 30px;
+   
+}
+.footer-images{
+    display: flex;
+    flex-wrap: nowrap;
+     gap: 20px;
+     margin-top: 45px;
+     width: 63px;
+     height: 59px;
+}
+.coypright{
+    color:  rgba(250, 36, 90, 1);
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+   
+    .footer-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-images{
+        margin-left: 120px;
+        
+    }
+   
+    .footer-images img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        padding: 15px 5%;
+    }
+    .footer-content p, .footer-nav ul li a {
+        font-size: 14px;
+    }
+    .footer-images{
+      margin-right: 20px;
+    }
+    .footer-images img {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .footer-content {
+        font-size: 12px;
+    }
+
+    .footer-content p {
+        font-size: 10px;
+        max-width: 200px;
+        line-height: 1.3;
+    }
+
+    .footer-para {
+        margin-top: 20px;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-nav ul li a {
+        font-size: 10px;
+    }
+
+    .footer-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        margin-left: 69px;
+    }
+
+    .footer-images img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .coypright {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+
+
