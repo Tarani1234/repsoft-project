@@ -1,4 +1,4 @@
 # vercel-backend
 
-run the server 
+run the server using 
 npm run dev
